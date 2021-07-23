@@ -79,7 +79,7 @@ def Donwloader(url_list):
     try:
         for links in URL_List:
             # you can locate the directory you want to store your data with this flage -o ""
-            command = f'youtube-dl {links}'
+            command = f'wget {links}'
             result = subprocess.call(command, shell=True)
             if result == 0:
                 download_count += 1
